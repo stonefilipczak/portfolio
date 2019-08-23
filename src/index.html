@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone Filipczak</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        font-family: Helvetica, sans-serif;
+        font-size: 50px;
+        width: 100%;
+      }
+      #bars {
+        margin-top: 20px;
+        height: 300px;
+      }
+      #bars:hover {
+        cursor: none;
+      }
+      #buttons {
+        float: center;
+        margin: 10px;
+      }
+      span {
+        margin: 10px;
+        margin-left: 0px;
+        font-weight: bold;
+        animation: unshadow 0.5s;
+      }
+      @keyframes unshadow {
+        from {
+          /* text-shadow: 0px 20px black; */
+          color: grey;
+        }
+        to {
+          color: black;
+          /* text-shadow: none;
+        }*/
+        }
+      }
+      span:hover {
+        color: grey;
+        cursor: none;
+        /* text-shadow: 0px 20px black; */
+        animation: shadow 0.2s;
+      }
+      @keyframes shadow {
+        from {
+          color: black;
+          /* text-shadow: none; */
+        }
+        to {
+          /* text-shadow: 0px 20px black; */
+          color: grey;
+        }
+      }
+      #about {
+        height: 290px;
+        align-content: center;
+        text-align: center;
+        background-color: black;
+        /* border-style: solid;
+        border-width: 15px; */
+        overflow: hidden;
+        animation: out 0.5s;
+      }
+      #about:hover {
+        background-color: white;
+        animation: in 0.5s;
+        color: black;
+      }
+
+      .show {
+        color: white;
+        
+      }
+   
+  
+      @keyframes in {
+        0% {
+          background-color: black;
+        }
+
+        100% {
+          background-color: white;
+         
+        }
+      }
+      @keyframes out {
+        0% {
+          background-color: white;
+         
+        }
+
+        100% {
+          background-color: black;
+        
+        }
+      }
+      #blurb {
+        margin: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 30px;
+      }
+      .piece {
+        height: 500px;
+        background-color: black;
+        animation: out 0.5s;
+        text-align: center;
+        margin-top: -30px;
+      }
+      .piece:hover {
+        background-color: white;
+        animation: in 0.5s;
+        color: black;
+      }
+      .arrow {
+        font-size: 90px;
+        animation: bob 1s linear alternate infinite;
+       
+        
+      }
+      .contact{
+        font-size: 30px;
+        align-content: center;
+        text-align: center;
+        background-color: black;
+        color: white;
+        height: 666px;
+        
+        background-image: url("black.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: imageOut 0.5s;
+      }
+      .contact:hover {
+        background-color: white;
+        color: black;
+        
+        background-image: url("white.png");
+        animation: imageIn 0.5s;
+      }
+      @keyframes imageIn {
+        from {
+          color: white;
+          background-color: black;
+          background-image: url("black.png");
+        }
+        to {
+          color: black;
+          background-color: white;
+          background-image: url("white.png");
+        }
+      }
+      @keyframes imageOut {
+        from {
+          color: black;
+          background-color: white;
+          background-image: url("white.png");
+        }
+        to {
+          color: white;
+          background-color: black;
+          background-image: url("black.png");
+        }
+      }
+
+      @keyframes bob {
+      from {
+        margin-top: 0px;
+      }
+      to {
+        margin-top: 40px;
+      }
+      }
+      .email {
+       
+        padding-top: 600px;
+        font-weight: bold;
+      }
+    </style>
+    <script src="../p5.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div id="buttons">
+      <span onclick="aboutClick()">About</span>
+      <span onclick="projectsClick()">Projects</span>
+      <span onclick="contactClick()">Contact</span>
+    </div>
+    <div id="header">
+      <h1>Stone Filipczak</h1>
+    </div>
+    <div id="bars"></div>
+    <div id="about">
+      <p id="blurb">
+        Hi, my name's Stone. I'm a web developer from Baltimore, MD.
+      </p>
+     
+      <div class="arrow">&#8681</div>
+    </div>
+    <div class="piece">
+      <h2>GAMEBOY</h2>
+    </div>
+    <div class="piece">
+      <h2>ADVENTURE</h2>
+    </div>
+    <div class="piece">
+        <h2>THERAMIN</h2>
+    </div>
+    <div class="piece">
+        <h2>GUT FAUNA</h2>
+    </div>  
+    <div class="contact">
+      
+      <div class="email">stonejacobs@gmail.com</div>
+    </div>
+  </body>
+</html>
