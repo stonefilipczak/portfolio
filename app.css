@@ -1,0 +1,351 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 50px;
+  width: 100%;
+}
+#bars {
+  margin-top: 20px;
+  height: 300px;
+  width: 1080px;
+  overflow: hide;
+}
+#bars:hover {
+  cursor: none;
+}
+#buttons {
+  float: center;
+  margin: 10px;
+}
+span {
+  margin: 10px;
+  margin-left: 0px;
+  font-weight: bold;
+  animation: unshadow 0.5s;
+}
+@keyframes unshadow {
+  from {
+    /* text-shadow: 0px 20px black; */
+    color: grey;
+  }
+  to {
+    color: black;
+    /* text-shadow: none;
+    }*/
+  }
+}
+span:hover {
+  color: grey;
+  cursor: none;
+  /* text-shadow: 0px 20px black; */
+  animation: shadow 0.2s;
+}
+@keyframes shadow {
+  from {
+    color: black;
+    /* text-shadow: none; */
+  }
+  to {
+    /* text-shadow: 0px 20px black; */
+    color: grey;
+  }
+}
+#about {
+  height: 290px;
+  align-content: center;
+  text-align: center;
+  background-color: black;
+  /* border-style: solid;
+    border-width: 15px; */
+  overflow: hidden;
+  animation: out 0.5s;
+}
+#about:hover {
+  background-color: white;
+  animation: in 0.5s;
+  color: black;
+}
+
+.show {
+  color: white;
+}
+
+.show:link {
+  color: white;
+}
+
+@keyframes in {
+  0% {
+    background-color: black;
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+@keyframes out {
+  0% {
+    background-color: white;
+  }
+
+  100% {
+    background-color: black;
+  }
+}
+#blurb {
+  margin: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.piece {
+  height: 600px;
+  background-color: black;
+
+  margin-top: -30px;
+}
+.piece:hover {
+  background-color: white;
+
+  color: black;
+}
+.arrow {
+  font-size: 90px;
+  animation: bob 1s linear alternate infinite;
+}
+.contact {
+  font-size: 30px;
+  align-content: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 666px;
+
+  background-image: url("img/black.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: imageOut 0.5s;
+}
+.contact:hover {
+  background-color: white;
+  color: black;
+
+  background-image: url("img/white.png");
+  animation: imageIn 0.5s;
+}
+@keyframes imageIn {
+  from {
+    color: white;
+    background-color: black;
+    background-image: url("img/black.png");
+  }
+  to {
+    color: black;
+    background-color: white;
+    background-image: url("img/white.png");
+  }
+}
+@keyframes imageOut {
+  from {
+    color: black;
+    background-color: white;
+    background-image: url("img/white.png");
+  }
+  to {
+    color: white;
+    background-color: black;
+    background-image: url("img/black.png");
+  }
+}
+
+@keyframes bob {
+  from {
+    margin-top: 0px;
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+.email {
+  padding-top: 600px;
+  font-weight: bold;
+}
+
+.gameboy {
+  background-image: url("img/gameboy-invert.png");
+  background-position: right;
+  background-size: 350px;
+  background-repeat: no-repeat;
+  animation: gameboy 0.5s;
+}
+
+.gameboy:hover {
+  background-image: url("img/gameboy.png");
+  animation: gameboyinvert 0.5s;
+  color: black;
+}
+
+@keyframes gameboyinvert {
+  from {
+    background-color: black;
+    background-image: url("img/gameboy-invert.png");
+  }
+  to {
+    background-color: white;
+    background-image: url("img/gameboy.png");
+  }
+}
+
+@keyframes gameboy {
+  from {
+    background-color: white;
+    background-image: url("img/gameboy.png");
+  }
+
+  to {
+    background-color: black;
+    background-image: url("img/gameboy-invert.png");
+  }
+}
+
+.adventure {
+  background-image: url("img/adventure-invert.png");
+  background-position: right;
+  background-size: 500px;
+  background-repeat: no-repeat;
+  animation: adventure 0.5s;
+}
+
+.adventure:hover {
+  background-image: url("img/adventure.png");
+  animation: adventureinvert 0.5s;
+  color: black;
+}
+
+@keyframes adventureinvert {
+  from {
+    background-color: black;
+    background-image: url("img/adventure-invert.png");
+  }
+  to {
+    background-color: white;
+    background-image: url("img/adventure.png");
+  }
+}
+
+@keyframes adventure {
+  from {
+    background-color: white;
+    background-image: url("img/adventure.png");
+  }
+
+  to {
+    background-color: black;
+    background-image: url("img/adventure-invert.png");
+  }
+}
+
+.gutfauna {
+  background-image: url("img/gutfauna-invert.png");
+  background-position: right;
+  background-size: 500px;
+  background-repeat: no-repeat;
+  animation: gutfauna 0.5s;
+}
+
+.gutfauna:hover {
+  background-image: url("img/gutfauna.png");
+  animation: gutfaunainvert 0.5s;
+  color: black;
+}
+
+@keyframes gutfaunainvert {
+  from {
+    background-color: black;
+    background-image: url("img/gutfauna-invert.png");
+  }
+  to {
+    background-color: white;
+    background-image: url("img/gutfauna.png");
+  }
+}
+
+@keyframes gutfauna {
+  from {
+    background-color: white;
+    background-image: url("img/gutfauna.png");
+  }
+
+  to {
+    background-color: black;
+    background-image: url("img/gutfauna-invert.png");
+  }
+}
+
+.info {
+  width: 40%;
+  margin: 20px;
+  padding-top: 20px;
+}
+
+a:hover {
+  color: green;
+}
+a {
+  color: black;
+}
+h4 {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 790px) {
+  .info {
+    width: 30%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .info {
+    width: 100%;
+
+    font-size: 12px;
+    margin: 0px;
+    margin-top: 290px;
+  }
+  .adventure {
+    background-size: 350px;
+    background-position: 50% 10%;
+  }
+  .gameboy {
+    background-position: 50% 5%;
+    background-size: 250px;
+  }
+  .gutfauna {
+    background-position: 50% 20%;
+    background-size: 370px;
+  }
+
+  .arrow {
+    font-size: 60px;
+  }
+  h4 {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  .contact {
+    height: 450px;
+  }
+  .email {
+    padding-top: 400px;
+  }
+}

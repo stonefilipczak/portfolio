@@ -1,6 +1,10 @@
 const s = sketch => {
   sketch.setup = () => {
-    sketch.createCanvas(sketch.windowWidth, 300);
+    if (sketch.windowWidth <= 1080) {
+      sketch.createCanvas(sketch.windowWidth, 300);
+    } else {
+      sketch.createCanvas(1080, 300);
+    }
     sketch.frameRate(15);
   };
 
@@ -25,7 +29,9 @@ const s = sketch => {
   };
 
   sketch.windowResized = () => {
-    sketch.resizeCanvas(sketch.windowWidth, 300);
+    if (sketch.windowWidth <= 1080) {
+      sketch.resizeCanvas(sketch.windowWidth, 300);
+    }
   };
 };
 
@@ -44,7 +50,7 @@ function aboutClick() {
 
 function projectsClick() {
   window.scrollBy({
-    top: 730, // could be negative value
+    top: 720, // could be negative value
     left: 0,
     behavior: "smooth"
   });
@@ -64,4 +70,8 @@ function contactClick() {
     left: 0,
     behavior: "smooth"
   });
+}
+
+function loadAbout() {
+  document.getElementById("about").classList.add("load");
 }
