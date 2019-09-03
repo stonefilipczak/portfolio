@@ -177,10 +177,6 @@ span:hover {
     margin-top: 40px;
   }
 }
-.email {
-  padding-top: 600px;
-  font-weight: bold;
-}
 
 .gameboy {
   background-image: url("img/gameboy-invert.png");
@@ -307,6 +303,11 @@ a {
 }
 h4 {
   font-size: 22px;
+}
+
+.email {
+  padding-top: 600px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 790px) {
