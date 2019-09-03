@@ -360,4 +360,7 @@ h4 {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  body {
+    overflow-x: hidden !important;
+  }
 }
