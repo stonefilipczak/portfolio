@@ -130,10 +130,16 @@ span:hover {
   height: 666px;
 
   background-image: url("img/black.png");
-  background-position: center;
+  background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
   animation: imageOut 0.5s;
+}
+
+.contact a {
+  position: relative;
+  top: 600px;
+  font-weight: bold;
 }
 .contact:hover {
   background-color: white;
@@ -303,11 +309,6 @@ h4 {
   font-size: 22px;
 }
 
-.email {
-  padding-top: 600px;
-  font-weight: bold;
-}
-
 @media screen and (max-width: 790px) {
   .info {
     width: 30%;
@@ -349,8 +350,8 @@ h4 {
   .contact {
     height: 450px;
   }
-  .email {
-    padding-top: 400px;
+  .contact a {
+    top: 400px;
     font-size: 20px;
   }
   h1 {
