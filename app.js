@@ -1,4 +1,4 @@
-const s = sketch => {
+const s = (sketch) => {
   sketch.setup = () => {
     if (sketch.windowWidth <= 1080) {
       sketch.createCanvas(sketch.windowWidth, 300);
@@ -41,20 +41,26 @@ function aboutClick() {
   window.scrollBy({
     top: 470, // could be negative value
     left: 0,
-    behavior: "smooth"
+    behavior: "smooth",
   });
-  setTimeout(function() {
+  setTimeout(function () {
     document.getElementById("about").classList.add("show");
   }, 300);
+  Array.from(document.getElementsByClassName("piece")).forEach(function (
+    element
+  ) {
+    console.log(element);
+    element.classList.add("show");
+  });
 }
 
 function projectsClick() {
   window.scrollBy({
     top: 750, // could be negative value
     left: 0,
-    behavior: "smooth"
+    behavior: "smooth",
   });
-  Array.from(document.getElementsByClassName("piece")).forEach(function(
+  Array.from(document.getElementsByClassName("piece")).forEach(function (
     element,
     index,
     array
@@ -68,7 +74,7 @@ function contactClick() {
   window.scrollBy({
     top: 4000, // could be negative value
     left: 0,
-    behavior: "smooth"
+    behavior: "smooth",
   });
 }
 
