@@ -6,7 +6,6 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-<<<<<<< HEAD
 
 #videobox {
   justify-content: center;
@@ -40,14 +39,6 @@ h1 {
   border-bottom: none;
   text-shadow: blueviolet 0px 10px;
   padding-left: 6px;
-=======
-h1 {
-  text-align: center;
-  font-family: "Bungee Shade", cursive;
-  font-size: 60px;
-  width: 100%;
-  height: 60px;
->>>>>>> 33512b81536e78b0b4b2b9e7e28259028e60d436
 }
 #bars {
   margin-top: 20px;
@@ -95,23 +86,15 @@ span:hover {
 }
 #about {
   height: 290px;
-<<<<<<< HEAD
   /* align-content: center; */
   text-align: right;
-=======
-  align-content: center;
-  text-align: center;
->>>>>>> 33512b81536e78b0b4b2b9e7e28259028e60d436
   background-color: black;
   /* border-style: solid;
     border-width: 15px; */
 
   overflow: hidden;
   animation: out 0.5s;
-<<<<<<< HEAD
   align-items: center;
-=======
->>>>>>> 33512b81536e78b0b4b2b9e7e28259028e60d436
 }
 #about:hover {
   background-color: white;
@@ -147,7 +130,6 @@ span:hover {
 }
 #blurb {
   margin: 20px;
-<<<<<<< HEAD
   font-size: 15px;
   font-weight: bold;
   margin-top: 30px;
@@ -155,11 +137,6 @@ span:hover {
   text-align: left;
   border-left: 20px solid black;
   padding-left: 7px;
-=======
-  font-size: 30px;
-  font-weight: bold;
-  margin-top: 30px;
->>>>>>> 33512b81536e78b0b4b2b9e7e28259028e60d436
 }
 .piece {
   height: 600px;
@@ -354,7 +331,6 @@ span:hover {
   padding-top: 120px;
 }
 
-<<<<<<< HEAD
 h2 {
   font-size: 15px;
   font-weight: bold;
@@ -373,28 +349,16 @@ a:hover {
 a {
   color: black;
   text-decoration: none;
-=======
-a:hover {
-  color: green;
-}
-a {
-  color: black;
->>>>>>> 33512b81536e78b0b4b2b9e7e28259028e60d436
 }
 h4 {
   font-size: 22px;
 }
 
-<<<<<<< HEAD
 /* @media screen and (max-width: 790px) {
-=======
-@media screen and (max-width: 790px) {
->>>>>>> 33512b81536e78b0b4b2b9e7e28259028e60d436
   .info {
     width: 30%;
     text-align: center;
   }
-<<<<<<< HEAD
 } */
 
 @media screen and (max-width: 710px) {
@@ -404,17 +368,6 @@ h4 {
   .info {
     width: 100%;
     text-align: center;
-=======
-  h1 {
-    font-size: 45px;
-  }
-}
-
-@media screen and (max-width: 710px) {
-  .info {
-    width: 100%;
-
->>>>>>> 33512b81536e78b0b4b2b9e7e28259028e60d436
     font-size: 12px;
     margin: 0px;
     padding-top: 400px;
@@ -446,12 +399,4 @@ h4 {
     top: 400px;
     font-size: 20px;
   }
-<<<<<<< HEAD
-=======
-  h1 {
-    font-size: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
->>>>>>> 33512b81536e78b0b4b2b9e7e28259028e60d436
 }
