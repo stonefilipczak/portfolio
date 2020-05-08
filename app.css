@@ -21,24 +21,26 @@ body {
   display: block;
 }
 
-nav {
+/* nav {
   background-image: url("img/pet.png");
   background-position: right;
   background-size: 90px;
   background-repeat: no-repeat;
-}
+} */
 
 h1 {
   text-align: left;
-  /* font-family: "Bungee Shade", cursive; */
+  font-family: "Bungee Shade", Helvetica, sans-serif;
   margin-left: 10px;
   font-size: 40px;
   width: 300px;
-  color: greenyellow;
-  border: 10px inset;
+  color: black;
+  border: 10px solid white;
   border-bottom: none;
-  text-shadow: blueviolet 0px 10px;
+  /* text-shadow: blueviolet 0px 300px; */
   padding-left: 6px;
+  border-left: 20px solid black;
+  border-right: none;
 }
 #bars {
   margin-top: 20px;
@@ -49,7 +51,8 @@ h1 {
 }
 #buttons {
   float: center;
-  margin: 10px;
+  margin: 30px;
+  margin-left: 40px;
 }
 span {
   margin: 10px;
@@ -129,7 +132,7 @@ span:hover {
   }
 }
 #blurb {
-  margin: 20px;
+  margin: 10px;
   font-size: 15px;
   font-weight: bold;
   margin-top: 30px;
@@ -342,8 +345,8 @@ h2 {
 }
 
 a:hover {
-  color: orange;
-  text-shadow: 0px 10px black;
+  color: white;
+  text-shadow: 0px 20px black;
 }
 
 a {
@@ -362,8 +365,21 @@ h4 {
 } */
 
 @media screen and (max-width: 710px) {
+  .video {
+    width: 100%;
+  }
+  /* h1 {
+    font-size: 32px;
+    width: 220px;
+    padding-top: 3px;
+    /* text-shadow: blueviolet 0px 7px; */
+
+  nav {
+    background-size: 70px;
+  }
   h2 {
-    margin-left: 30%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .info {
     width: 100%;

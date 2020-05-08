@@ -39,7 +39,7 @@ let myp5 = new p5(s, "bars");
 
 function aboutClick() {
   window.scrollBy({
-    top: 470, // could be negative value
+    top: 530, // could be negative value
     left: 0,
     behavior: "smooth",
   });
