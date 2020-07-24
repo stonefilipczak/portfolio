@@ -7,6 +7,11 @@ body {
   margin-right: auto;
 }
 
+h5 {
+  font-size: 17px;
+  max-width: 250px;
+}
+
 #videobox {
   justify-content: center;
 
@@ -414,5 +419,9 @@ h4 {
   .contact a {
     top: 400px;
     font-size: 20px;
+  }
+
+  h5 {
+    display: none;
   }
 }
