@@ -222,6 +222,43 @@ span:hover {
   }
 }
 
+.forest {
+  background-image: url("img/forest-invert.png");
+  background-position: 95%;
+  background-size: 500px;
+  background-repeat: no-repeat;
+  animation: forest 0.5s;
+}
+
+.forest:hover {
+  background-image: url("img/forest.png");
+  animation: forestinvert 0.5s;
+  color: black;
+}
+
+@keyframes forestinvert {
+  from {
+    background-color: black;
+    background-image: url("img/forest-invert.png");
+  }
+  to {
+    background-color: white;
+    background-image: url("img/forest.png");
+  }
+}
+
+@keyframes forest {
+  from {
+    background-color: white;
+    background-image: url("img/forest.png");
+  }
+
+  to {
+    background-color: black;
+    background-image: url("img/forest-invert.png");
+  }
+}
+
 .gameboy {
   background-image: url("img/gameboy-invert.png");
   background-position: right;
@@ -394,6 +431,11 @@ h4 {
     padding-top: 400px;
   }
   .adventure {
+    background-size: 350px;
+    background-position: 50% 10%;
+  }
+
+  .forest {
     background-size: 350px;
     background-position: 50% 10%;
   }
